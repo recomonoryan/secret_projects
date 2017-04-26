@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Izza Esquivel | Official Website</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/styles.css">
+    	<link href="https://fonts.googleapis.com/css?family=Marck+Script|Montserrat" rel="stylesheet">
+    	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+		    <nav id="header-nav" class="navbar navbar-default" data-spy="affix" data-offset-top="100">
+		      <div class="container">
+		        <div class="navbar-header">
+		          <!--<a href="index.html" class="pull-left visible-md visible-lg">
+		            <div id="logo-img"></div>
+		          </a>-->
+
+		          <div class="navbar-brand">
+		            <a id="logo_name" href="index.html"><h1 id="logo_title">Izza Esquivel</h1></a>
+		          </div>
+
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		        </div>
+		        
+		        <div id="collapsable-nav" class="collapse navbar-collapse">
+		           <ul id="nav-list" class="nav navbar-nav navbar-right">
+		            <li>
+		              <a href="index.html">HOME</a>
+		            </li>
+		            <li>
+		              <a href="about.html">ABOUT</a>
+		            </li>
+		            <li>
+		              <a href="photos.html">PHOTOS</a>
+		            </li>
+		            <li>
+		              <a href="social.html">SOCIAL</a>
+		            </li>
+		          </ul><!-- #nav-list -->
+		        </div><!-- .collapse .navbar-collapse -->
+		      </div><!-- .container -->
+		    </nav><!-- #header-nav -->
+		</header>
+			<div class="container">
+				<div class="img_container row">
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_1" class="image_izza" onclick="openLightBox();" src="images/izza_6.jpg">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_2" class="image_izza" onclick="openLightBox();" src="images/izza_2.jpg">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_3" class="image_izza" onclick="openLightBox();" src="images/izza_3.jpg">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_4" class="image_izza" onclick="openLightBox();" src="images/izza_4.jpg">
+					</div>
+				</div>
+				<div class="row" style="margin-bottom: 30px;">
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_5" class="image_izza" onclick="openLightBox();" src="images/izza_33.jpg">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_6" class="image_izza" onclick="openLightBox();" src="images/izza_26.jpg">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_7" class="image_izza" onclick="openLightBox();" src="images/izza_21.jpg">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="izza_8" class="image_izza" onclick="openLightBox();" src="images/izza_12.jpg">
+					</div>
+				</div>
+				<div id="myModal" class="modal">
+					<div id="lightbox">
+						<span id="close">&times;</span>
+						<div id="image_view">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<footer class="panel-footer" style="border-radius: 0px;">
+				<p id="footer_title">Izza Esquivel</p><br>
+				<p style="text-align:center;">Copyright &copy; Izza Esquivel 2017</p>
+				<p style="text-align:center;">Website by Ryan</p>
+			</footer>
+		</body>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			function openLightBox(){
+				document.getElementById("myModal").style.display = "block";
+			}
+			document.addEventListener("DOMContentLoaded", function(event){
+				document.getElementById("close").addEventListener("click", function(event){
+						document.getElementById('myModal').style.display = "none";
+				});
+
+				document.getElementById("izza_1").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_6.jpg">';
+				});
+
+				document.getElementById("izza_2").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_2.jpg">';
+				});
+
+				document.getElementById("izza_3").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_3.jpg">';
+				});
+
+				document.getElementById("izza_4").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_4.jpg">';
+				});
+
+				document.getElementById("izza_5").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_33.jpg">';
+				});
+
+				document.getElementById("izza_6").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_26.jpg">';
+				});
+
+				document.getElementById("izza_7").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_21.jpg">';
+				});
+
+				document.getElementById("izza_8").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/izza_12.jpg">';
+				});
+			});
+		</script>
+		<!--<script src="js/script.js"></script>-->
+	</body>
+</html>
