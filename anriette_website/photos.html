@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Anriette Beatriz Oni | Official Website</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/styles.css">
+    	<link href="https://fonts.googleapis.com/css?family=Marck+Script|Montserrat" rel="stylesheet">
+    	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+		    <nav id="header-nav" class="navbar navbar-default" data-spy="affix" data-offset-top="100">
+		      <div class="container">
+		        <div class="navbar-header">
+		          <!--<a href="index.html" class="pull-left visible-md visible-lg">
+		            <div id="logo-img"></div>
+		          </a>-->
+
+		          <div class="navbar-brand">
+		            <a id="logo_name" href="index.html"><h1 id="logo_title">Anriette Beatriz</h1></a>
+		          </div>
+
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		        </div>
+		        
+		        <div id="collapsable-nav" class="collapse navbar-collapse">
+		           <ul id="nav-list" class="nav navbar-nav navbar-right">
+		            <li>
+		              <a href="index.html">HOME</a>
+		            </li>
+		            <li>
+		              <a href="about.html">ABOUT</a>
+		            </li>
+		            <li>
+		              <a href="photos.html">PHOTOS</a>
+		            </li>
+		          </ul><!-- #nav-list -->
+		        </div><!-- .collapse .navbar-collapse -->
+		      </div><!-- .container -->
+		    </nav><!-- #header-nav -->
+		</header>
+			<div class="container">
+				<div class="img_container row">
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_1" class="image_izza" onclick="openLightBox();" src="images/anriette_2.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_2" class="image_izza" onclick="openLightBox();" src="images/anriette_4.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_3" class="image_izza" onclick="openLightBox();" src="images/anriette_6.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_4" class="image_izza" onclick="openLightBox();" src="images/anriette_8.jpg">
+					</div>
+				</div>
+				<div class="img_container row" style="margin-bottom: 30px;">
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_5" class="image_izza" onclick="openLightBox();" src="images/anriette_1.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_6" class="image_izza" onclick="openLightBox();" src="images/anriette_3.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_7" class="image_izza" onclick="openLightBox();" src="images/anriette_5.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_8" class="image_izza" onclick="openLightBox();" src="images/anriette_7.jpg">
+					</div>
+				</div>
+				<div class="img_container row" style="margin-bottom: 30px;">
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_9" class="image_izza" onclick="openLightBox();" src="images/anriette_12.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_10" class="image_izza" onclick="openLightBox();" src="images/anriette_14.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_11" class="image_izza" onclick="openLightBox();" src="images/anriette_9.jpg">
+					</div>
+					<div class="cell col-lg-3 col-md-3 col-sm-6" style="padding-bottom: 20px;">
+						<img id="anriette_12" class="image_izza" onclick="openLightBox();" src="images/anriette_11.jpg">
+					</div>
+				</div>
+				<div id="myModal" class="modal">
+					<div id="lightbox">
+						<span id="close">&times;</span>
+						<div id="image_view">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<footer class="panel-footer" style="border-radius: 0px;">
+				<p id="footer_title">Anriette Beatriz</p><br>
+				<p style="text-align:center;">Copyright &copy; Anriette Beatriz 2017</p>
+				<p style="text-align:center;">Website by Ryan</p>
+			</footer>
+		</body>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			function openLightBox(){
+				document.getElementById("myModal").style.display = "block";
+			}
+			document.addEventListener("DOMContentLoaded", function(event){
+				document.getElementById("close").addEventListener("click", function(event){
+						document.getElementById('myModal').style.display = "none";
+				});
+
+				document.getElementById("anriette_1").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_2.jpg">';
+				});
+
+				document.getElementById("anriette_2").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_4.jpg">';
+				});
+
+				document.getElementById("anriette_3").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_6.jpg">';
+				});
+
+				document.getElementById("anriette_4").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_8.jpg">';
+				});
+
+				document.getElementById("anriette_5").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_1.jpg">';
+				});
+
+				document.getElementById("anriette_6").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_3.jpg">';
+				});
+
+				document.getElementById("anriette_7").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_5.jpg">';
+				});
+
+				document.getElementById("anriette_8").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_7.jpg">';
+				});
+
+				document.getElementById("anriette_9").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_12.jpg">';
+				});
+
+				document.getElementById("anriette_10").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_14.jpg">';
+				});
+
+				document.getElementById("anriette_11").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_9.jpg">';
+				});
+
+				document.getElementById("anriette_12").addEventListener("click", function(event){
+					document.getElementById('image_view').innerHTML ='<img class="image_light" src="images/anriette_11.jpg">';
+				});
+			});
+		</script>
+		<!--<script src="js/script.js"></script>-->
+	</body>
+</html>
